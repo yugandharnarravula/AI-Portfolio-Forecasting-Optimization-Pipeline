@@ -3,7 +3,6 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
 ![Supabase](https://img.shields.io/badge/Supabase-Database-green)
 ![CI](https://img.shields.io/badge/CircleCI-CI%2FCD-orange)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 ## Project Overview
 
 This project implements an end-to-end machine learning pipeline for forecasting financial asset prices and optimizing portfolio allocation.

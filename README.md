@@ -19,7 +19,7 @@ The pipeline includes:
 • CI/CD automation with CircleCI  
 • Interactive analytics dashboard built with Streamlit  
 
-**Live Application**: This project is hosted on a Hostinger VPS, runs every morning at 9am UTC and is accessible at [portfolio-optimisation.com](coming soon)
+**Live Application**: This project is deployed on Streamlit Community Cloud. The optimisation pipeline runs daily at 9:00 CT via GitHub Actions and the dashboard is accessible at: [portfolio-optimisation.com](https://ai-portfolio-forecasting-optimization-pipeline-hf39kcenqrwcfld.streamlit.app/#portfolio-weights)
 
 ## Components
 

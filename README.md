@@ -5,21 +5,10 @@
 ![CI](https://img.shields.io/badge/CircleCI-CI%2FCD-orange)
 ## Project Overview
 
-This project implements an end-to-end machine learning pipeline for forecasting financial asset prices and optimizing portfolio allocation.
-The system combines time-series forecasting with quantitative portfolio optimization to generate daily portfolio allocations based on predicted asset returns.
+End-to-end machine learning pipeline for forecasting stock prices and optimizing portfolio allocation using Prophet and Modern Portfolio Theory.
+Includes automated data ingestion, forecasting, optimization, and a real-time dashboard.
 
-_This project is intended for research and educational purposes only and should not be considered financial advice._
-
-The pipeline includes:
-
-• Automated data ingestion  
-• Time-series forecasting using Prophet  
-• Portfolio optimization using Modern Portfolio Theory  
-• Cloud storage using Supabase  
-• CI/CD automation with CircleCI  
-• Interactive analytics dashboard built with Streamlit  
-
-**Live Application**: This project is deployed on Streamlit Community Cloud. The optimisation pipeline runs daily at 9:00 CT via GitHub Actions and the dashboard is accessible at: [portfolio-optimisation.com](https://ai-portfolio-forecasting-optimization-pipeline-hf39kcenqrwcfld.streamlit.app/#portfolio-weights)
+**Live Application**: [portfolio-optimisation.com](https://ai-portfolio-forecasting-optimization-pipeline-hf39kcenqrwcfld.streamlit.app/#portfolio-weights)
 
 ## Components
 
@@ -59,7 +48,7 @@ Results Stored in Supabase
         ↓
 Portfolio Visualization via Streamlit Dashboard
         ↓
-Automated Execution via CircleCI
+Automated Execution via GitHub Actions + Streamlit Cloud Deployment
 ```
 ## Tech Stack
 
@@ -70,6 +59,17 @@ Automated Execution via CircleCI
 - Streamlit (dashboard visualization)
 - CircleCI (automation / CI pipeline)
 - Poetry (dependency management)
+
+## Deployment
+
+The application is deployed using Streamlit Community Cloud.
+
+- Backend pipeline runs daily via GitHub Actions
+- Predictions are stored in Supabase
+- Dashboard fetches real-time data from Supabase
+- Frontend is hosted on Streamlit Cloud
+
+Live App: [portfolio-optimisation.com](https://ai-portfolio-forecasting-optimization-pipeline-hf39kcenqrwcfld.streamlit.app)
 
 ## Installation
 
@@ -94,8 +94,8 @@ poetry install
   - [Setup guide](https://circleci.com/blog/setting-up-continuous-integration-with-github/)
 - Supabase account and project
   - [Starting guide](https://supabase.com/docs/guides/getting-started)
-- Hostinger VPS
-  - [Starting Guide](https://www.hostinger.com/vps-hosting)
+- Streamlit Community Cloud
+  - [Starting Guide](https://docs.streamlit.io/deploy/streamlit-community-cloud/get-started)
 
 ## Usage
 

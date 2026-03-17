@@ -1,20 +1,21 @@
 """Streamlit dashboard for Prophet-based portfolio forecasts."""
 
-
 from __future__ import annotations
-from dotenv import load_dotenv
-load_dotenv()
+
 import json
 from datetime import date
 from functools import lru_cache
-import os
+
 import altair as alt
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from dotenv import load_dotenv
 
 from src.database import get_supabase_client
 from src.settings import SUPABASE_TABLE_NAME
+
+load_dotenv()
 
 st.set_page_config(page_title="Portfolio Forecast Dashboard", layout="wide")
 

@@ -52,6 +52,7 @@ def load_supabase_predictions() -> pd.DataFrame:
 
     return df
 
+
 def _parse_price_history(raw: object) -> list[float]:
     if raw is None:
         return []

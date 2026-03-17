@@ -171,9 +171,9 @@ def pie_chart(weights_df: pd.DataFrame):
 
 
 def run_dashboard() -> None:
-    st.title("📊 Portfolio Forecast Dashboard")
+    st.title("📊 AI Portfolio Forecasting Dashboard")
     st.caption(
-        "Latest Prophet predictions, portfolio weights, and performance analysis sourced from Supabase."
+        "AI-driven stock price forecasting and portfolio optimization with real-time insights."
     )
 
     df = load_supabase_predictions()

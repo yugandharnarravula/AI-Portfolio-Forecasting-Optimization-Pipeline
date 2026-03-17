@@ -2,16 +2,15 @@
 
 
 from __future__ import annotations
-from dotenv import load_dotenv
-load_dotenv()
 import json
 from datetime import date
 from functools import lru_cache
-import os
 import altair as alt
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+from dotenv import load_dotenv
+load_dotenv()
 
 from src.database import get_supabase_client
 from src.settings import SUPABASE_TABLE_NAME
@@ -50,7 +49,6 @@ def load_supabase_predictions() -> pd.DataFrame:
         df["actual_prices_last_month"] = df["actual_prices_last_month"].apply(_parse_price_history)
 
     return df
-
 
 def _parse_price_history(raw: object) -> list[float]:
     if raw is None:

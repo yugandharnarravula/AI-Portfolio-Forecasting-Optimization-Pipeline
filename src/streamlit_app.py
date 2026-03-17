@@ -1,6 +1,5 @@
 """Streamlit dashboard for Prophet-based portfolio forecasts."""
 
-
 from __future__ import annotations
 import json
 import altair as alt
@@ -14,6 +13,8 @@ load_dotenv()
 
 from src.database import get_supabase_client
 from src.settings import SUPABASE_TABLE_NAME
+
+load_dotenv()
 
 st.set_page_config(page_title="Portfolio Forecast Dashboard", layout="wide")
 
